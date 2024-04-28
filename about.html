@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/feature-carousel.css" charset="utf-8" />
+    <script src="js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+    <style>
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+}
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+    li.dropdown {
+    display: inline-block;
+}
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+li {
+    float: left;
+    
+    
+}
+.lwidth{
+    width: 190px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.img-circle {
+    border-radius: 50%;
+    
+}
+.hosteldetails{
+    text-align: left;
+}
+    </style>
+  </head>
+  <body>
+  
+  
+  <center>
+       
+   <center><p><img class="img-circle" src="images/logo1.jpg" height="100" width="100">&nbsp;&nbsp;&nbsp;
+<font size="10dp" color="#144DA0" style="position: relative;bottom:  35px;">Software Testing Documentation: Test Cases and Bug Reports</font></p></center>
+ <p><ul>
+          <li class="lwidth"><a class="active" href="index.html">Home</a></li>
+  
+  
+   
+  <li class="lwidth"><a href="about.html">About Project</a></li>
+  
+    <li class="lwidth"><a href="chetan_resume.pdf">Resume</a></li>
+      
+      </ul></p><br><br>
+  
+   <!-- <a id="but_prev" href="#">PREV</a> | <a id="but_pause" href="#">PAUSE</a> | <a id="but_start" href="#">START</a> | <a id="but_next" href="#">NEXT</a>--> 
+   
+    
+  </center>
+  <hr>
+ Test Cases:<br>
+Test cases are detailed descriptions of test scenarios, inputs, expected results, and execution steps to validate specific functionalities of the software.<br>
+Test Case 1: User Login Functionality<br>
+•   Test ID: TC001<br>
+•   Description: Verify that users can successfully log in to the system with valid credentials.<br>
+•   Preconditions: User account exists in the system.<br>
+•   Test Steps:<br> 
+1.  Launch the application.<br>
+2.  Navigate to the login page.<br>
+3.  Enter valid username and password.<br>
+4.  Click on the "Login" button.<br>
+•   Expected Result: User should be logged in successfully and directed to the dashboard page.<br>
+•   Actual Result: User is logged in and redirected to the dashboard page.<br>
+•   Pass/Fail: Pass<br>
+3. Bug Reports:<br>
+Bug reports document any deviations or issues identified during the testing process, including descriptions, steps to reproduce, severity, and priority.
+Bug Report 1: Unable to Upload Profile Picture<br>
+•   Bug ID: BR001<br>
+•   Description: Users are unable to upload profile pictures when editing their profiles.<br>
+•   Steps to Reproduce: <br>
+1.  Log in to the application.<br>
+2.  Navigate to the user profile section.<br>
+3.  Click on the "Edit Profile" button.<br>
+4.  Try to upload a profile picture.<br>
+•   Expected Result: Profile picture should be uploaded successfully and displayed on the user profile.<br>
+•   Actual Result: Error message "Failed to upload profile picture" is displayed, and the picture is not uploaded.<br>
+•   Severity: High<br>
+•   Priority: Medium<br>
+•   Assigned To: [Developer Name]<br>
+•   Status: Open<br>
+4. Conclusion:<br>
+Effective software testing documentation, including test cases and bug reports, is essential for identifying defects, tracking issues, and ensuring the quality of the software product. By following standardized testing processes and maintaining comprehensive documentation, teams can streamline the testing process, improve collaboration, and deliver high-quality software to users.
+This Software Testing Documentation provides a structured approach to documenting test cases and bug reports, enabling effective testing and quality assurance throughout the software development lifecycle.
+
+
+
+
+
+                            
+  </body>
+</html>
